@@ -1,0 +1,108 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "exactOptionalPropertyTypes": false,
+    "baseUrl": "./",
+    "importsNotUsedAsValues": "remove",
+    "preserveConstEnums": true,
+    "stripInternal": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+      "Decorators",
+      "WebWorker",
+      "WebWorker.ImportScripts",
+      "Webworker.Iterable"
+    ],
+    "useDefineForClassFields": true,
+    "extendedDiagnostics": true,
+    "preserveWatchOutput": false,
+    "types": [
+      "vite/client",
+    ],
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "allowUmdGlobalAccess": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noResolve": false,
+    "resolveJsonModule": true,
+    "downlevelIteration": false,
+    "newLine": "lf",
+    "removeComments": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "disableSizeLimit": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "noErrorTruncation": true,
+    "skipLibCheck": true,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "pretty": true,
+    "paths": {
+      "~i18n": [
+        "./src/app/i18n/index.ts"
+      ],
+      "~queryClient": [
+        "./src/app/queryClient/index.ts"
+      ],
+      "~router": [
+        "./src/app/router/index.ts"
+      ],
+      "~pages/*": [
+        "./src/pages/*"
+      ],
+      "~shared/*": [
+        "./src/shared/*"
+      ],
+      "~entities/*": [
+        "./src/entities/*"
+      ],
+      "~features/*": [
+        "./src/features/*"
+      ],
+      "~app/*": [
+        "./src/app/*"
+      ],
+      "~icons": [
+        "./public/icons"
+      ],
+    }
+  },
+  "include": ["src",
+  "./vite.config.ts",
+  "@types"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

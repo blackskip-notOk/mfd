@@ -1,4 +1,35 @@
 {
-  "name": "microfrontend",
-  "packageManager": "yarn@4.0.2"
+  "name": "host",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.0.2",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "volta": {
+    "node": "20.11.0",
+    "yarn": "4.1.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@evilmartians/lefthook": "^1.6.1",
+    "@originjs/vite-plugin-federation": "^1.3.4",
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "lightningcss": "^1.23.0",
+    "typescript": "^5.3.3",
+    "typescript-plugin-css-modules": "^5.0.2",
+    "vite": "^5.0.12",
+    "vite-plugin-gen-typed-css-modules": "^0.1.1"
+  }
 }

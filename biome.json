@@ -1,0 +1,99 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"ignore": ["**/*.d.ts"],
+		"ignoreUnknown": true,
+		"include": [
+			"./src/**/*.ts",
+			"./src/**/*.tsx",
+			"./configs/vite/proxy.ts",
+			"./vite.config.ts",
+			"./tsconfig.json",
+			"./biome.json",
+			"./formatter.json",
+			"./linter.json",
+			"./package.json",
+			"./.stylelintrc.json",
+			"./.stylelintignore",
+			"./.lintstagedrc.json",
+			"./.vscode/settings.json",
+			"./playwright.config.ts",
+			"./tests/**/*.ts"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "tab",
+		"indentWidth": 4,
+		"lineWidth": 120
+	},
+	"javascript": {
+		"formatter": {
+			"arrowParentheses": "asNeeded",
+			"indentStyle": "tab",
+			"indentWidth": 4,
+			"jsxQuoteStyle": "single",
+			"lineWidth": 120,
+			"quoteStyle": "single",
+			"semicolons": "asNeeded",
+			"trailingComma": "none"
+		},
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": true
+		}
+	},
+	"json": {
+		"formatter": {
+			"indentStyle": "tab",
+			"indentWidth": 4,
+			"lineWidth": 120
+		},
+		"parser": {
+			"allowComments": true,
+			"allowTrailingCommas": false
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true,
+			"complexity": {
+				"noExcessiveCognitiveComplexity": "warn",
+				"useSimplifiedLogicExpression": "warn"
+			},
+			"correctness": {
+				"noNewSymbol": "warn",
+				"noUndeclaredVariables": "error",
+				"noUnusedVariables": "warn",
+				"useHookAtTopLevel": "error"
+			},
+			"nursery": {
+				"all": true
+			},
+			"style": {
+				"noImplicitBoolean": "off",
+				"noNegationElse": "warn",
+				"useBlockStatements": "warn",
+				"useCollapsedElseIf": "warn",
+				"useFragmentSyntax": "warn",
+				"useNamingConvention": "off",
+				"useShorthandArrayType": "warn",
+				"useShorthandAssign": "warn"
+			},
+			"suspicious": {
+				"noApproximativeNumericConstant": "warn",
+				"noConsoleLog": "warn",
+				"noMisrefactoredShorthandAssign": "warn"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true
+	}
+}
